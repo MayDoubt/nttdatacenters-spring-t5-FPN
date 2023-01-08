@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "7db21486-a94d-43fb-a6b5-a33a883e5788",
+		"name": "TallerSpring5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25095650"
+	},
+	"item": [
+		{
+			"name": "ClientList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/springRest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springRest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": \"5\",\r\n    \"name\": \"Petunio\",\r\n    \"surname\": \"Ortega\",\r\n    \"birthdate\": \"05-12-1994\",\r\n    \"dni\": \"45454545X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/springRest/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springRest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/springRest/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springRest",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/springRest/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springRest",
+						"client"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
