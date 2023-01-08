@@ -50,18 +50,17 @@ private static Map<String, Client> clientList;
 	}
 	
 	/**
-	 * Retorna todos los clientes.
+	 * Return all clients
 	 * 
 	 * @return List<Client>
 	 */
 	@GetMapping()
 	public Map<String, Client> showClients() {
-		System.out.println("showClients");
 		return 	clientList;
 	}
 	
 	/**
-	 * Añade un nuevo cliente.
+	 * Add new client
 	 * 
 	 * @param newClient
 	 */
@@ -72,7 +71,7 @@ private static Map<String, Client> clientList;
 	}
 	
 	/**
-	 * Elimina un cliente.
+	 * Delete one client by id
 	 * 
 	 * @param id
 	 */
@@ -83,7 +82,7 @@ private static Map<String, Client> clientList;
 	}
 	
 	/**
-	 * Búsqueda por atributos (ID)
+	 * Search by id
 	 * 
 	 * @param client
 	 * @return Client
